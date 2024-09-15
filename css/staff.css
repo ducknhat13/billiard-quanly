@@ -1,0 +1,90 @@
+body {
+    background-image: url('../img/bida-back.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed; 
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.motherbox {
+    width: auto;
+    height: auto;
+}
+
+.login {
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    text-align: center;
+    /* Flexbox căn giữa đã được áp dụng cho body */
+}
+
+.login h1 {
+    color: white;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+.login input {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: transform 0.3s ease-in-out;
+    padding-left: 10px;
+}
+
+.login input:hover {
+    transform: scale(1.1);
+}
+
+.login .input1 {
+    margin-bottom: 5px;
+}
+
+.login p {
+    font-size: 13px;
+    text-align: right;
+    margin-right: 25px;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
+}
+
+a:hover {
+    color: rgb(145, 137, 137);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.login button {
+    width: 250px;
+    height: 40px;
+    background-color: #2196f3;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+
+}
+
+.login button:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+

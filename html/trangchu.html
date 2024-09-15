@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="../css/trangchu.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="motherbox">
+        <header>
+            <!-- logo -->
+            <div class="head-left">
+                <img src="../img/figma-5.svg" alt="logo">
+            </div>
+
+            <!-- navi -->
+            <div class="head-right">
+                <ul>
+                    <li>
+                        <label for="branch-select">Chi nhánh:</label>
+                        <select id="branch-select">
+                            <option value="hanoi">Hà Nội</option>
+                            <option value="hcm">Hồ Chí Minh</option>
+                            <option value="danang">Đà Nẵng</option>
+                            <option value="haiphong">Hải Phòng</option>
+                        </select>
+                    </li>
+                    <li class="log-box">
+                        <select id="accountType" onchange="redirectToLogin()">
+                            <option disabled selected>Chọn tài khoản</option>
+                            <option value="nhanvien">Nhân viên</option>
+                            <option value="quanly">Quản lý</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="navi">
+                <p><a href="#">Quản lý bàn</a></p>
+                <p><a href="#">Doanh số</a></p>
+            </div>
+            <div class="content">
+                <aside>
+                    <ul>
+                        <li>
+                            <h3><a href="#">Standard</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#">Smoke</a></h3>
+                        </li>
+                        <li>
+                            <h3><a href="#">V.I.P</a></h3>
+                        </li>
+                    </ul>
+                </aside>
+
+                <article>
+                    <div id="content-standard" class="article-content">
+                        <div class="table-grid">
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 1" data-room="standard"><img src="../img/billiard-table.svg" alt="Bàn 1"></a>
+                                <p>Bàn 1</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 2" data-room="standard"><img src="../img/billiard-table.svg" alt="Bàn 2"></a>
+                                <p>Bàn 2</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 3" data-room="standard"><img src="../img/billiard-table.svg" alt="Bàn 3"></a>
+                                <p>Bàn 3</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 4" data-room="standard"><img src="../img/billiard-table.svg" alt="Bàn 4"></a>
+                                <p>Bàn 4</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 5" data-room="standard"><img src="../img/billiard-table.svg" alt="Bàn 5"></a>
+                                <p>Bàn 5</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 6" data-room="standard"><img src="../img/billiard-table.svg" alt="Bàn 6"></a>
+                                <p>Bàn 6</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Nội dung của mục Smoke -->
+                    <div id="content-smoke" class="article-content" style="display: none;">
+                        <div class="table-grid">
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 7" data-room="smoke"><img src="../img/billiard-table.svg" alt="Bàn 7"></a>
+                                <p>Bàn 7</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 8" data-room="smoke"><img src="../img/billiard-table.svg" alt="Bàn 8"></a>
+                                <p>Bàn 8</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 9" data-room="smoke"><img src="../img/billiard-table.svg" alt="Bàn 9"></a>
+                                <p>Bàn 9</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#"data-name="Bàn 10" data-room="smoke"><img src="../img/billiard-table.svg" alt="Bàn 10"></a>
+                                <p>Bàn 10</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#"data-name="Bàn 11" data-room="smoke"><img src="../img/billiard-table.svg" alt="Bàn 11"></a>
+                                <p>Bàn 11</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#"data-name="Bàn 12" data-room="smoke"><img src="../img/billiard-table.svg" alt="Bàn 12"></a>
+                                <p>Bàn 12</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Nội dung của mục V.I.P -->
+                    <div id="content-vip" class="article-content" style="display: none;">
+                        <div class="table-grid">
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 13" data-room="VIP"><img src="../img/billiard-table.svg" alt="Bàn 13"></a>
+                                <p>Bàn 13</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 14" data-room="v.i.p"><img src="../img/billiard-table.svg" alt="Bàn 14"></a>
+                                <p>Bàn 14</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 15" data-room="v.i.p"><img src="../img/billiard-table.svg" alt="Bàn 15"></a>
+                                <p>Bàn 15</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 16" data-room="v.i.p"><img src="../img/billiard-table.svg" alt="Bàn 16"></a>
+                                <p>Bàn 16</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 17" data-room="v.i.p"><img src="../img/billiard-table.svg" alt="Bàn 17"></a>
+                                <p>Bàn 17</p>
+                            </div>
+                            <div class="table-item">
+                                <a href="#" data-name="Bàn 18" data-room="v.i.p"><img src="../img/billiard-table.svg" alt="Bàn 18"></a>
+                                <p>Bàn 18</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+        </main>
+        <footer></footer>
+    </div>
+
+
+     <!-- Popup window -->
+     <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2 id="popup-title">Thông tin bàn</h2>
+            <p id="popup-info">Thông tin bàn sẽ xuất hiện ở đây.</p>
+            <p id="amount-to-pay" style="display: none;">Số tiền cần thanh toán: 0 đồng</p>
+            <div class="popup-buttons">
+                <button id="book-table">Đặt bàn</button>
+                <button id="pay">Thanh toán</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/trangchu.js"></script>
+</body>
+</html>

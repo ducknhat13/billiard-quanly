@@ -78,7 +78,7 @@ header ul li:first-child {
     top: 80px;
     width: 100%;
     height: 35px;
-    background-color: #2196f3;
+    background-color: #8eccff;
     display: flex;
     position: relative;
     gap: 50px;
@@ -108,7 +108,7 @@ header ul li:first-child {
 }
 
 .content {
-    margin: 125px 50px 0 50px;
+    margin: 100px 50px 0 50px;
     height: 400px;
     display: flex;
     gap: 30px;
@@ -175,9 +175,10 @@ header ul li:first-child {
 
 .table-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 cột */
+    grid-template-columns: repeat(3, 1fr); /* 2 cột */
     gap: 20px; /* Khoảng cách giữa các ảnh */
     padding: 20px;
+    font-family: var(--font-family);
 }
 
 .table-item {
@@ -185,16 +186,22 @@ header ul li:first-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 250px;
+    height: 150px;
+    background-color: #a3a3a3;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform   0.3s ease-in-out;
 }
 
 .table-item img {
-    width: 150px; /* Đặt kích thước cho ảnh */
+    width: 80px; /* Đặt kích thước cho ảnh */
     height: auto;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Thêm hiệu ứng cho màu sắc */
+   
 }
 
-.table-item p {
-    margin-top: 10px;
+.table-item .p1{
+    margin-top: 2px;
     font-family: var(--font-family);
     color: #000;
     font-weight: bold;
@@ -204,8 +211,8 @@ header ul li:first-child {
     text-decoration: none;
 }
 
-.table-item:hover img {
-    transform: scale(1.1); /* Phóng to ảnh khi hover */
+.table-item:hover{
+    transform: scale(1.1);
 }
 
 .table-item.booked img {
@@ -248,6 +255,9 @@ header ul li:first-child {
 
 .popup-buttons {
     margin-top: 20px;
+    display: flex; /* Đặt các phần tử bên trong thành flex để xếp ngang */
+    justify-content: center; /* Căn giữa các nút */
+    gap: 20px; /* Khoảng cách giữa các nút */
 }
 
 .popup-buttons button {
@@ -263,4 +273,47 @@ header ul li:first-child {
 
 .popup-buttons button:hover {
     background-color: #1976d2;
+}
+
+
+
+footer{ 
+    width: 100%;
+    height: 120px;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.footer-up{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    background-color: #dedcdc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-left: 50px;
+    font-size: 15px;
+}
+.footer-down{
+    background-color: #8eccff;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.icon{
+    display: flex;
+    gap: 10px;
+}
+
+.footer-up-left{
+    width: 40%;
+}
+.footer-up-mid{
+    width: 30%;
 }
